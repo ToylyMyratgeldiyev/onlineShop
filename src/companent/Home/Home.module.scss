@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    .container{
+        border: .5px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        width: calc(100% - 500px);
+        margin: 50px 250px;
+        border-radius: 5px;
+        background-color: #f9f6f1;
+
+        
+        .filters{
+            border: .5px solid gray;
+            min-height: calc(300px - 40px);
+            width: calc(20% - 40px);
+            margin: 20px 0 20px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        
+        .list_products{
+            border: .5px solid gray;
+            height: calc(100% - 40px);
+            width:  calc(80% - 40px);
+            margin: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 10px 0 10 0;
+                li{
+                    list-style-type: none;
+                    margin-bottom: 20px;
+                    
+                    &:hover{
+                        box-shadow: 5px 5px 5px #8d91aa;
+                        transition: all .5s;
+                        box-sizing: border-box;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        img{
+                            height: 150px;
+                            margin-left: 10px;
+                            float: left;
+                        }
+                    
+                      h3{
+                        display: block;
+                        margin-left: 170px;
+                        font-weight: 700;
+                        font-size: 25px;
+                      }  
+                    }
+                    .descriptions{
+                        margin: 10px;
+                        font-size: 22px;
+                        height: 100px;
+                        width:700px;
+                        margin-left: 50px;
+                        display: inline-block;
+                      }
+                      .price{
+                        float: right;
+                        width: 150px;
+                        font-weight: bold;
+                        font-size: 20px;
+                      }
+
+                }
+            }
+        }
+    }
+}
+    
